@@ -1031,6 +1031,8 @@ void donlist(char *arg, const int on_ctrl_conn, const int opt_l_,
                  opt_t ? "-t" : "");
     if (matches >= max_ls_files) {
         addreply(226, MSG_LS_TRUNCATED, matches);
+    } else if (matches == 0U) {
+        addreply_noformat(550, MSG_LS_NO_MATCHES);
     } else {
         addreply(226, MSG_LS_SUCCESS, matches);
     }

@@ -184,6 +184,7 @@
 #define MSG_CANT_READ_FILE "Sorry, we were unable to read [%s]"
 #define MSG_LS_TRUNCATED "Output truncated to %u matches"
 #define MSG_LS_SUCCESS "%u matches total"
+#define MSG_LS_NO_MATCHES "No matches"
 #define MSG_LOGOUT "Logout."
 #define MSG_AUTH_FAILED_LOG "Authentication failed for user [%s]"
 #define MSG_ILLEGAL_UMASK "Invalid umask"
